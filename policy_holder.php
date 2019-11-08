@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("includes/db_connect.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -288,7 +288,6 @@ include("includes/db_connect.php");
                     <div class="card-body wizard-content">
                         <h4 class="card-title">Add Policy Holders</h4>
                         <h6 class="card-subtitle"></h6>
-                        <form id="example-form" action="#" class="m-t-40">
                             <div>
                                 <h3></h3>
                                 <section>
@@ -307,7 +306,7 @@ include("includes/db_connect.php");
                     <select type="text" class="form-control" id="insurance_name"  name="insurance_name" required />
                     <option value="">select</option>
                     <?php
-
+include("includes/db_connect.php");
                     
                 $view_client_query="select * from insurance";
         $run=mysqli_query($conn,$view_client_query);
@@ -316,7 +315,7 @@ include("includes/db_connect.php");
         {
             $ID=$row[0];
             ?>
-            <option value="<?php echo $ID?>">
+            <option value="<?php echo $row[1]?>">
             <?php echo $insurance_name=$row[1]; ?>
             
         </option>
@@ -342,7 +341,7 @@ include("includes/db_connect.php");
                     <div class="border-top">
                      <div class="card-body">
                             
-                     <button type="submit" name = "submit" class="btn btn-default">Add Insurance</button></div>
+                     <input type="submit" value= "insert">
 
 
                                 </section>

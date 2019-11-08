@@ -302,7 +302,7 @@ session_start();
                         <div class="card card-hover">
                             <div class="box bg-success text-center">
                                 <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
-                                <h6 class="text-white"> <a href="insurance.php">Company Options</h6>
+                                <h6 class="text-white"> <a href="view_insurance.php">View Insurance</h6>
                             </div>
                         </div>
                     </div>
@@ -311,19 +311,12 @@ session_start();
                         <div class="card card-hover">
                             <div class="box bg-warning text-center">
                                 <h1 class="font-light text-white"><i class="mdi mdi-account"></i></h1>
-                                <h6 class="text-white"> <a href="view_holders.php">Policy Holders</a></h6>
+                                <h6 class="text-white"> <a href="policy_holder.php">Request insurance</a></h6>
                             </div>
                         </div>
                     </div>
                     <!-- Column -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="card card-hover">
-                            <div class="box bg-danger text-center">
-                                <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
-                                <h6 class="text-white"> <a href="reports.php">Reports</h6>
-                            </div>
-                        </div>
-                    </div>
+                  
                 </div>
                                <!-- END MODAL -->
 
